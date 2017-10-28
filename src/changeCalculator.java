@@ -26,10 +26,16 @@ public class changeCalculator {
 
 	int e = Integer.parseInt(quarters);
 	double d = e*0.25;
-		double total = a + s + d;
-		System.out.println( "You have " + total + " dollars");// Calculate how much money the user has and save it in a double variable 
+	
+	String pennies = JOptionPane.showInputDialog("How many pennies do you have?");
+	int r = Integer.parseInt(pennies);
+	double f = r*0.01;
+	
+		double total = a + s + d + f;
+		// Calculate how much money the user has and save it in a double variable 
 
 		// Tell the user how much money they have
+ System.out.println( "You have " + "$" + total);
  System.out.println("Poof! You're a sandwich");
 
 	}
